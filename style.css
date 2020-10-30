@@ -1,6 +1,6 @@
 html {
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: 22px;
     background-color: black;
     color: white;
     text-align: center;
@@ -16,32 +16,38 @@ body {
 }
 
 main {
-    margin: 90px 10px 20px 10px;
+    margin: 9rem 1rem 2rem 1rem;
     display: grid;
     grid-template-areas:
-        "title1"
-        "pic1"
-        "pic2"
-        "pic3"
-        "pic4"
-        "title2"
-        "pic5"
-        "pic6"
-        "pic7"
-        "title3"
-        "pic8"
-        "pic9"
-        "pic10";
+        "title1 title1"
+        "pic1 pic2"
+        "pic3 pic4"
+        "title2 title2"
+        "pic5 pic7"
+        "pic6 pic7"
+        "title3 title3"
+        "pic8 pic10"
+        "pic9 pic10";
     gap: 10px;
 }
 
 a {
+    font-size: 2rem;
     text-decoration: none;
     color: red;
-    margin: 0 20px;
+    margin: 0 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 h4 {
+    font-size: 1.5rem;
     color: red;
     margin: 0;
 }
@@ -55,8 +61,8 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 10px;
-    height: 79px;
+    padding-top: 1rem;
+    height: 8rem;
     border-bottom: 1px solid red;
 }
 
@@ -67,12 +73,13 @@ header nav {
 
 h1 {
     line-height: 1.1rem;
+    font-size: 3rem;
 }
 
 #movie {
     background-color: red;
     color: black;
-    padding: 5px;
+    padding: .5rem;
 }
 
 .one {
@@ -125,4 +132,42 @@ h1 {
 
 .pic10 {
     grid-area: pic10;
+}
+
+@media only screen and (min-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        height: 79px;
+        padding-top: 3px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main {
+        margin: 90px 200px 40px 200px;
+        grid-template-areas:
+            "title1 title1 title1 title1"
+            "pic1 pic2 pic3 pic4"
+            "title2 title2 pic8 pic10"
+            "pic5 pic7 pic9 pic10"
+            "pic6 pic7 title3 title3";
+        align-items: center;
+    }
+
+    .pic8 {
+        margin-top: 20px;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
 }
