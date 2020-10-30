@@ -1,0 +1,128 @@
+html {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin: 90px 10px 20px 10px;
+    display: grid;
+    grid-template-areas:
+        "title1"
+        "pic1"
+        "pic2"
+        "pic3"
+        "pic4"
+        "title2"
+        "pic5"
+        "pic6"
+        "pic7"
+        "title3"
+        "pic8"
+        "pic9"
+        "pic10";
+    gap: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    margin: 0 20px;
+}
+
+h4 {
+    color: red;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    z-index: 100;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    height: 79px;
+    border-bottom: 1px solid red;
+}
+
+header nav {
+    display: flex;
+    text-align: center;
+}
+
+h1 {
+    line-height: 1.1rem;
+}
+
+#movie {
+    background-color: red;
+    color: black;
+    padding: 5px;
+}
+
+.one {
+    grid-area: title1;
+}
+
+.two {
+    grid-area: title2;
+}
+
+.three {
+    grid-area: title3;
+}
+
+.pic1 {
+    grid-area: pic1;
+}
+
+.pic2 {
+    grid-area: pic2;
+}
+
+.pic3 {
+    grid-area: pic3;
+}
+
+.pic4 {
+    grid-area: pic4;
+}
+
+.pic5 {
+    grid-area: pic5;
+}
+
+.pic6 {
+    grid-area: pic6;
+}
+
+.pic7 {
+    grid-area: pic7;
+}
+
+.pic8 {
+    grid-area: pic8;
+}
+
+.pic9 {
+    grid-area: pic9;
+}
+
+.pic10 {
+    grid-area: pic10;
+}
